@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0f2744" />
+  <title>ระบบขอใช้รถราชการ</title>
+  <link rel="stylesheet" href="assets/css/app.css" />
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">Fleet Service</div>
+        <h1 id="pageTitle">หน้าหลัก</h1>
+      </div>
+      <button id="profileBtn" class="avatar" aria-label="โปรไฟล์">U</button>
+    </header>
+
+    <main id="content" class="content"></main>
+
+    <nav class="bottom-nav">
+      <button data-route="home" class="nav-item active"><span>⌂</span><small>หน้าหลัก</small></button>
+      <button data-route="request" class="nav-item"><span>＋</span><small>ขอรถ</small></button>
+      <button data-route="status" class="nav-item"><span>◉</span><small>สถานะ</small></button>
+      <button data-route="history" class="nav-item"><span>☰</span><small>ประวัติ</small></button>
+      <button data-route="more" class="nav-item"><span>⋯</span><small>เพิ่มเติม</small></button>
+    </nav>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <div id="loading" class="loading hidden"><div class="spinner"></div><div>กำลังดำเนินการ...</div></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
